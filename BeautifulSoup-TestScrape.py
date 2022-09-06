@@ -1,1 +1,7 @@
-import BeautifulSoup as bs
+print("Test")
+
+def poop:
+    print("teet")
+    return
+
+poop()
