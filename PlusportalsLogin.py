@@ -1,9 +1,10 @@
-import requests
+import pip._vendor.requests as requests
 from bs4 import BeautifulSoup
 def loginPayload(username, password):
     payload = {
+        "User-agent": "*",
         "username": username,
-        "pass word": password
+        "password": password
     }
     r = requests.post("https://plusportals.com/doradoacademy", data=payload)
     fp = open('PlusPortals-Scraper/HTMLplusportals.html', 'w')
