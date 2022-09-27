@@ -1,6 +1,5 @@
 from PlusportalsLogin import sendLogin
 from bs4 import BeautifulSoup
-from urllib.request import urlopen
 import re
 
 TAG_RE = re.compile(r'<[^>]+>')
