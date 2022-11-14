@@ -10,8 +10,12 @@ def remove_tags(text):
 url = "https://plusportals.com/doradoacademy"
 
 website = sendLogin("2024jcrivera@doradoacademy.org", "Hrengin1", url)
-soup = BeautifulSoup(website.text, "html.parser")
-print(website)
+print(website.url)
+#print(BeautifulSoup(website.text).prettify)
+
+
+
+# find grades
 """webTable = soup.find(id="GridRecentScore")
 textExtract = soup.find(role="gridcell")
 print(textExtract)"""
